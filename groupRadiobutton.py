@@ -50,8 +50,7 @@ class groupradioButtonDemo(unittest.TestCase):
         obj = self.driver.find_element_by_xpath("// button[contains(text(), 'Get values')]").click()
         self.driver.implicitly_wait(150)
         src = self.driver.find_element_by_xpath("//p[@class='groupradiobutton']").text
-        print('\n\n')
-        print(src)
+        print('\n\n'+src)
 
         obj = self.driver.find_element_by_xpath("(//input[@value='Female'])[2]").click()
         obj = self.driver.find_element_by_xpath("// input[ @ value = '5 - 15']").click()
